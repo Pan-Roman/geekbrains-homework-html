@@ -2,24 +2,69 @@ body{
 	background: #f8f8f8;
 	font: 1em Helvetica, Verdana, sans-serif;
 }
+
 h3{
 	color: black;
 	font-size: 18px;
 	font-weight: 400;
 	background-color: #eaeaea;
 }
+
+table {
+	border-collapse: collapse;
+}
+
+td, th {
+	border: 1px solid black;
+}
+
+.logo {
+	background: url(img/logo2.png) no-repeat;
+	height: 125px;
+	position: relative;
+	float: left;
+    min-width: 225px;
+}
+
+.logo > h1{
+	position: absolute;
+    top: 28px;
+    left: 35px;
+    color: #e5194a;
+    font-size: 3em;
+}
+
+.logo > strong{
+	position: absolute;
+    top: 105px;
+    left: 21px;
+    color: #e5194a;
+    font-size: 0.65em;
+}
+
 .menu{
 	font: 20px Helvetica, Arial, Verdana, sans-serif;
-	list-style: none;
-	margin: 0;
-	padding: 0;
+    list-style: none;
+    margin: 95px 0 8px 0;
+    padding: 0;
+    float: left;
+    width: 83%;
 }
+
 .menu > li {
 	display: inline-block;
-	margin: 1em;
+	margin: 0 1em;
 }
+
 .menu > li > a{
 	text-decoration: none;
+	/* color:#c11942; */
+	/* color:#ca1340;  */
+	color: #e5194a;
+}
+
+.menu > li:hover > a{
+	color: #707070;
 }
 
 .main .slider > img {
@@ -32,17 +77,22 @@ h3{
 	font-style: italic;
 	line-height: 16px;
 }
+
 .detail_description {
 	color: #484343;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 24px;
 }
+
 .characteristics > ul > li{
-	list-style-type: circle;
+	list-style-type: none;
     font-variant-caps: petite-caps;
     font-style: italic;
+    background: url(img/heart.png) no-repeat;
+    padding: 0 0 0 15px;
 }
+
 .contacts input, .contacts textarea {
 	color: #707070;
 	font-size: 18px;
@@ -52,16 +102,50 @@ h3{
     padding: 4px;
     margin: 0 0 7px 15px;
 }
+
+.contacts #email:focus{
+	color: #e5194a;
+	background-color: #eaeaea;
+}
+
 .contacts input {
 	height: 20px;
+	text-transform: capitalize;
 }
 
 .contacts textarea {
 	height: 50px;
 }
-.detail_product > a > img {
+
+.detail_product p:first-letter {
+	color: #e5194a;
+	font-size: 2em;
+}
+
+.detail_product .mainImg img:hover {
+	border-color: transparent;
+}
+
+.detail_product .mainImg img {
 	height: 30em;
 	border: 2px solid #707070;
     border-radius: 5px;
 	
+}
+
+.detail_product .previews{
+	margin: 0;
+    padding: 0;
+}
+
+.detail_product .previews li{
+	list-style-type: none;
+	display: inline-block;
+}
+
+.detail_product .previews img{
+	    width: 7em;
+    height: 7em;
+    border: 1px solid #707070;
+    border-radius: 5px;
 }
