@@ -140,6 +140,13 @@ footer .copyright {
     background: url(img/heart.png) no-repeat;
     padding: 0 0 0 15px;
 }
+.products{
+	overflow: hidden;
+}
+.product {
+	float: left;
+    max-width: 200px;
+}
 
 .contacts input, .contacts textarea {
 	color: #707070;
