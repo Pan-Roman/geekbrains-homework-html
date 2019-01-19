@@ -95,6 +95,26 @@ footer .copyright {
 	height: 30em;
 }
 
+.brief {
+	overflow: hidden;
+}
+
+.brief > button {
+	border: 1px solid black;
+	padding: 10px 15px;
+	border-radius: 5px
+}
+
+.brief > button:active {
+	color: white;
+	background-color: #e5194a;
+}
+.brief > button:hover {
+	/* color: #e5194a; */
+	background-color: #707070;;
+	border: 1px solid #e5194a;
+}
+
 .brief > p {
 	color: #707070;
 	font-size: 14px;
@@ -109,7 +129,11 @@ footer .copyright {
 	line-height: 24px;
 }
 
-.characteristics > ul > li{
+.detail_product .characteristics {
+	clear: both;
+}
+
+.detail_product .characteristics > ul > li{
 	list-style-type: none;
     font-variant-caps: petite-caps;
     font-style: italic;
@@ -155,6 +179,11 @@ footer .copyright {
 	border: 2px solid #707070;
     border-radius: 5px;
 	
+}
+
+.detail_product .visualisation {
+	float: left;
+	margin: 0 20px 20px 0;
 }
 
 .detail_product .previews{
